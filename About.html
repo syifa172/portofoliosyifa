@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+ </style>
+</head>
+<body class="bg-pink-100 font-roboto">
+    <div class="container mx-auto p-4">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-8">
+            <div class="relative group">
+                <button id="menu-button" class="flex items-center focus:outline-none">
+                    <i class="fas fa-bars text-2xl mr-2"></i>
+                    <span class="text-xl font-semibold">About</span>
+                </button>
+                <div id="menu" class="absolute mt-2 w-48 bg-white border rounded shadow-lg hidden">
+                    <a href="index.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Beranda</a>
+                    <a href="resep.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">About</a>
+                    <a href="gallery.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Gallery</a>
+                    <a href="Contact.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Contact</a>
+                </div>
+            <div class="container mx-auto p-4">
+  <div class="flex justify-between items-center mb-8">
+    </div>
+  <p class="text-black-600 mt-12">  <!-- Increased margin-top to 'mt-12' -->
+    Selain Mahasiswi, kesibukan ku sehari-hari adalah bekerja
+    <p>Aku Bekerja di Suatu Perusahaan dan pada bagian Administrasi.</p>
+    <p>Meskipun Prodi dan Pekerjaanku tidak selaras, namun aku senang bisa Belajar hal baru mengenai Akuntansi.</p>
+    <h1 class="text-4xl font-bold text-gray-800 mt-8">Pengalaman Proyek</h1> 
+    <h2>Proyek yang pernah saya buat adalah, Saya pernah membuat Web Resep Masakan.</h2>
+    <p>Selain itu, saya juga pernah membuat Web Toko, Berikut sekilas tampilan nya</p>
+    <div class="ml-10">
+            <img alt="Illustration of a landscape" height="500" src="sweety.png" width="500"/>
+        </div>
+    <p>Selain Projek Membuat Web, saya juga Pernah membuat UI/UX</p>
+    <h1 class="text-4xl font-bold text-gray-800 mt-8">Keterampilan</h1> 
+    <p>-Memahami Dasar Corel Draw sebagai Software untuk Membuat Desain</p>
+    <p>-Pengetahuan dasar mengenai HTML dan CSS, serta Membuat Website Sederhana</p>
+    <p>-Kemampuan Manajemen waktu yang baik antara Waktu untuk Bekerja dan Kuliah</p>
+  </p>
+<div>
+ <script>
+        // Toggle menu
+        document.getElementById('menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+</script>
+</div>
+        
+</body>
+</html>

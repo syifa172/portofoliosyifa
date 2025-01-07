@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+ </style>
+</head>
+<body class="bg-pink-100 font-roboto">
+    <div class="container mx-auto p-4">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-8">
+            <div class="relative group">
+                <button id="menu-button" class="flex items-center focus:outline-none">
+                    <i class="fas fa-bars text-2xl mr-2"></i>
+                    <span class="text-xl font-semibold">Gallery</span>
+                </button>
+                <div id="menu" class="absolute mt-2 w-48 bg-white border rounded shadow-lg hidden">
+                    <a href="index.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Beranda</a>
+                    <a href="about.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">About</a>
+                    <a href="gallery.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Gallery</a>
+                    <a href="Contact.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Contact</a>
+                </div>
+            <div class="container mx-auto p-4">
+  <div class="flex justify-between items-center mb-8">
+    </div>
+    <h1 class="text-4xl font-bold text-black-300 mt-8">Logo yang pernah Saya buat</h1>
+      <div class="ml-10">
+            <img alt="Illustration of a landscape" height="300" src="logo.jpg" width="300"/>
+        </div> 
+    <h1 class="text-4xl font-bold text-black-300 mt-8">UI/UX yang pernah Saya buat</h1>
+    <div class="ml-10">
+            <img alt="Illustration of a landscape" height="300" src="beranda.jpeg" width="300"/>
+            <img alt="Illustration of a landscape" height="300" src="artikel.jpeg" width="300"/>
+            <img alt="Illustration of a landscape" height="300" src="resep.jpeg" width="300"/>
+            <img alt="Illustration of a landscape" height="300" src="Contact.jpeg" width="300"/>
+        </div> 
+    <h1>Web Resep Masakan yang pernah Saya buat</h1>
+        <a href="https://syifa172.github.io/resepmasakan/" style="color: red;">Click Here</a>
+
+    <h1 class="text-4xl font-bold text-black-300 mt-8">Keterampilan</h1> 
+    <p>-Memahami Dasar Corel Draw sebagai Software untuk Membuat Desain</p>
+    <p>-Pengetahuan dasar mengenai HTML dan CSS, serta Membuat Website Sederhana</p>
+    <p>-Kemampuan Manajemen waktu yang baik antara Waktu untuk Bekerja dan Kuliah</p>
+  </p>
+<div>
+ <script>
+        // Toggle menu
+        document.getElementById('menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+</script>
+</div>
+        
+</body>
+</html>
