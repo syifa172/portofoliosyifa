@@ -3,59 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <title>Formulir Saran</title>
+    <title>About Page</title>
 </head>
 <body class="bg-pink-100 font-roboto">
-    <div class="container mx-auto p-4">
+    <div class="container my-4">
         <!-- Header -->
-        <div class="flex justify-between items-center mb-8">
-            <div class="relative group">
-                <button id="menu-button" class="flex items-center focus:outline-none">
-                    <i class="fas fa-bars text-2xl mr-2"></i>
-                    <span class="text-xl font-semibold">Contact</span>
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="menu-button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-bars"></i> About
                 </button>
-                <div id="menu" class="absolute mt-2 w-48 bg-white border rounded shadow-lg hidden">
-                    <a href="index.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Beranda</a>
-                    <a href="About.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">About</a>
-                    <a href="Gallery.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Gallery</a>
-                    <a href="Contact.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Contact</a>
-                </div>
+                <ul class="dropdown-menu" aria-labelledby="menu-button">
+                    <li><a class="dropdown-item" href="index.html">Beranda</a></li>
+                    <li><a class="dropdown-item" href="About.html">About</a></li>
+                    <li><a class="dropdown-item" href="Gallery.html">Gallery</a></li>
+                    <li><a class="dropdown-item" href="Contact.html">Contact</a></li>
+                </ul>
             </div>
         </div>
 
-        <h1 class="text-2xl font-bold mb-4">Formulir Saran</h1>
-        <form action="/submit-saran" method="POST" class="bg-white p-6 rounded shadow-md">
-            <div class="mb-4">
-                <label for="nama" class="block text-sm font-medium text-gray-700">Nama:</label>
-                <input type="text" id="nama" name="nama" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-pink-200">
-            </div>
+        <p class="text-dark mt-4">
+            Selain Mahasiswi, kesibukan ku sehari-hari adalah bekerja.
+        </p>
+        <p>Aku Bekerja di Suatu Perusahaan dan pada bagian Administrasi.</p>
+        <p>Meskipun Prodi dan Pekerjaanku tidak selaras, namun aku senang bisa belajar hal baru mengenai Akuntansi.</p>
 
-            <div class="mb-4">
-                <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
-                <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-pink-200">
-            </div>
-
-            <div class="mb-4">
-                <label for="saran" class="block text-sm font-medium text-gray-700">Saran:</label>
-                <textarea id="saran" name="saran" rows="4" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-pink-200"></textarea>
-            </div>
-
-            <button type="submit" class="w-full bg-pink-500 text-white font-semibold py-2 rounded hover:bg-pink-600">Kirim Saran</button>
-        </form>
-
-        <div class="mt-6">
-            <p class="text-gray-700">Kontak: <a href="mailto:syifasalsa229@gmail.com" class="text-pink-500 hover:underline">syifasalsa229@gmail.com</a></p>
+        <h1 class="h4 font-weight-bold text-dark mt-4">Pengalaman Proyek</h1> 
+        <p>Proyek yang pernah saya buat adalah, Saya pernah membuat Web Resep Masakan.</p>
+        <p>Selain itu, saya juga pernah membuat Web Toko Dessert, Berikut sekilas tampilan Beranda nya</p>
+        
+        <div class="text-center my-4">
+            <img alt="Illustration of a landscape" class="img-fluid rounded shadow" src="sweety.png" />
         </div>
+
+        <p>Selain Projek Membuat Web, saya juga Pernah membuat UI/UX</p>
+
+        <h1 class="h4 font-weight-bold text-dark mt-4">Keterampilan</h1> 
+        <ul class="list-unstyled mt-4">
+            <li>- Memahami Dasar Corel Draw sebagai Software untuk Membuat Desain</li>
+            <li>- Pengetahuan dasar mengenai HTML dan CSS, serta Membuat Website Sederhana</li>
+            <li>- Kemampuan Manajemen waktu yang baik antara Waktu untuk Bekerja dan Kuliah</li>
+        </ul>
     </div>
 
-    <script>
-        // Toggle menu
-        document.getElementById('menu-button').addEventListener('click', function() {
-            const menu = document.getElementById('menu');
-            menu.classList.toggle('hidden');
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
